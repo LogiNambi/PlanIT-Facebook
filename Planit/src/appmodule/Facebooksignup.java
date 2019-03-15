@@ -9,10 +9,8 @@ public class Facebooksignup
 
 {
 	static WebDriver driver;
-	public static void signup(WebDriver Driver) throws Exception {
-		
-
-		    
+	public static void signup(WebDriver Driver) throws Exception 
+	{
 		    String Firstname = ExcelUtils.getCellData(1, 1);;
 			Facebook.Firstname(driver).sendKeys(Firstname);
 			
@@ -25,12 +23,11 @@ public class Facebooksignup
 			String Pwd = ExcelUtils.getCellData(1, 4);;
 			Facebook.Pwd(driver).sendKeys(Pwd);
 			
-			Dropdown.dropdown(driver);
+		    Dropdown.dropdown(driver);
 		    Facebook.Female(driver).click();
 		    Facebook.Logon(driver).click();
 	   
-	       
-	        }
+	 }
 
 	}
 

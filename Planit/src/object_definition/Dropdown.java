@@ -9,12 +9,11 @@ public class Dropdown {
 	
 	public static void dropdown(WebDriver driver)
 	   {
-		Select select = new Select(driver.findElement(By.xpath("//*[@id=\"day\"]")));
+		Select select = new Select(driver.findElement(By.name("birthday_day")));
 		select.selectByValue(null);
-		Select select1 = new Select(driver.findElement(By.xpath("//*[@id=\"month\"]")));
+		Select select1 = new Select(driver.findElement(By.name("birthday_month")));
 		select1.selectByValue(null);
-		Select select2 = new Select(driver.findElement(By.xpath("//*[@id=\"year\"]")));
+		Select select2 = new Select(driver.findElement(By.name("birthday_year")));
 		select2.selectByValue(null);
 		}
-     
-	}
+}

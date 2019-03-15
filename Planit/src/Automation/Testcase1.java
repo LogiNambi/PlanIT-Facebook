@@ -5,9 +5,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import Utility.ExcelUtils;
 
-
-
-
 public class Testcase1 {
 	public static void main(String[] args) throws Exception {
 
