@@ -10,12 +10,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
 	private static XSSFSheet Sheet;
-	 
-    private static XSSFWorkbook Book;
-
-    private static XSSFCell Cell;
-
-    private static XSSFRow Row;
+	private static XSSFWorkbook Book;
+	private static XSSFCell Cell;
+        private static XSSFRow Row;
 
 //This method is to set the File path and to open the Excel file, Pass Excel Path and Sheetname as Arguments to this method
 
@@ -38,9 +35,8 @@ throw (e);
 
 }
 
-//This method is to read the test data from the Excel cell, in this we are passing parameters as Row num and Col num
-
-	    public static String getCellData(int RowNum, int ColNum) throws Exception{
+//This method is to read the test data from the Excel cell, in this we are passing parameters as Row num and Col nu
+	public static String getCellData(int RowNum, int ColNum) throws Exception{
 
   try{
 
@@ -52,7 +48,7 @@ throw (e);
 
       }catch (Exception e){
 
-return"";
+return"null";
 
       }
 
@@ -88,7 +84,7 @@ Cell.setCellValue(Result);
 
       fileOut.flush();
 
-fileOut.close();
+fileOut.quit();
 
 }catch(Exception e){
 
