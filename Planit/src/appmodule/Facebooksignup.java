@@ -7,20 +7,20 @@ import object_definition.Facebook;
 
 public class Facebooksignup 
 
-{
+{       private static Webdriver driver=null;
 	static WebDriver driver;
 	public static void signup(WebDriver Driver) throws Exception 
 	{
-		    String Firstname = ExcelUtils.getCellData(1, 1);;
+		    String Firstname = ExcelUtils.getCellData(1, 1);
 			Facebook.Firstname(driver).sendKeys(Firstname);
 			
-			String Lastname = ExcelUtils.getCellData(1, 2);;
+			String Lastname = ExcelUtils.getCellData(1, 2);
 			Facebook.Lastname(driver).sendKeys(Lastname);
 			
-			String Mail = ExcelUtils.getCellData(1, 3); ;
+			String Mail = ExcelUtils.getCellData(1, 3);
 			Facebook.mail(driver).sendKeys(Mail);
 			
-			String Pwd = ExcelUtils.getCellData(1, 4);;
+			String Pwd = ExcelUtils.getCellData(1, 4);
 			Facebook.Pwd(driver).sendKeys(Pwd);
 			
 		    Dropdown.dropdown(driver);
