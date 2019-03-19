@@ -13,7 +13,7 @@ public class Testcase1 {
        driver.manage().window().maximize();
        appmodule.Facebooksignup.signup(driver);
        System.out.println("Login Successfully, now it is the time to Log Off buddy.");
-       driver.quit();
+       driver.close();
            //This is to send the PASS value to the Excel sheet in the result column.
        ExcelUtils.setCellData("Pass", 1, 5);
 
